@@ -1,10 +1,23 @@
 # Comp-10.2
 
-public class Comp102 {
-
-    public static void main(String[] args) {
-        Staff personnel = new Staff();
-        personnel.payday();
+public class Volunteer extends StaffMember
+{
+//-----------------------------------------------------------------
+// Constructor: Sets up this volunteer using the specified
+// information.
+//-----------------------------------------------------------------
+    public Volunteer(String eName, String eAddress, String ePhone)
+    {
+        super(eName, eAddress, ePhone);
     }
-    
+//-----------------------------------------------------------------
+// Returns a zero pay value for this volunteer.
+//-----------------------------------------------------------------
+    public double pay()
+    {
+        return 0.0;
+    }
+    public int vacation(){
+        return 0;
+    }
 }
